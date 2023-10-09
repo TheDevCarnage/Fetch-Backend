@@ -12,16 +12,19 @@ This Django REST Framework (DRF) application provides several endpoints for mana
 
 Follow these steps to set up and run the application:
 
-1. Activate the Virtual Environment (venv):
+1. Create the Virtual Environment (venv) in the root directory of the project:
+`python -m venv myenv`
+activate the environment by using: `myenv\Scripts\activate`
 
-2. Install Dependencies:
+3. Install Dependencies: `pip install -r requiremwnts.txt`
 
-3. Navigate to the `FetchAssignment` directory:
+4. Navigate to the `FetchAssignment` sub-directory: `cd FetchAssignment`
 
-4. Run Database Migrations:
-
-5. Start the Development Server:
-
+5. Run Database Migrations:
+  `python manage.py makemigrations rewards`
+  `python manage.py migrate`
+7. Start the Development Server:
+   `python manage.py runserver`
 By default, the development server runs on port 8000.
 
 ## Endpoints
